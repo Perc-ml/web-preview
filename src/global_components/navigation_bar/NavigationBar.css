@@ -1,0 +1,15 @@
+article{
+    position: relative;
+    background-color: var(--bacground-sideline);
+    color: var(--common-element-color);
+}
+
+#elements-holder{
+    position: flex;
+    list-style-type: disc;
+    list-style-position: inside;
+}   
+
+#elements-holder li{
+    position: flex;
+}

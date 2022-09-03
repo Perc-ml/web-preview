@@ -1,19 +1,33 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
-class NavigationBar extends React.Component {
-    constructor(props: any) {
+import PageConponent from '../../interfaces/pageComponent';
+
+import './NavigationBar.css'
+
+type NavigatorProperties={
+    pages: Array<PageConponent>,
+}
+
+
+class NavigationBar extends React.Component<NavigatorProperties> {
+    constructor(props: NavigatorProperties) {
         super(props);
-        console.log("Constructed");
+        console.log("Constructed with " + props.pages);
+        props.pages.forEach(element => {
+            console.log(element.path)
+        });
     }    
 
-
-    render() {
-      return (
-        <article>
-            
-        </article>);
-    
-      }
+    public render() {
+        return (
+            <article>
+                <ul id="elements-holder">
+                    {/* {this.props.pages.map((pageData: PageConponent) => {<li><Link to={pageData.path}>{pageData.label_element}</Link></li>})} */}
+                </ul>
+            </article>);
+        
+        }
 }
 
 export default NavigationBar;
