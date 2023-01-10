@@ -1,9 +1,10 @@
 :root {
   --background-primary: #02121C;
-  --background-sidline: #000A11;
+  --background-sideline: #000A11;
 
-  --choised-element-color: #8198A8;
+  --chosen-element-color: #8198A8;
   --common-element-color: #333F47;
+  --foreshadowed-element-color: #13171a;
 }
 
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-import PageConponent from '../../interfaces/pageComponent';
+import PageComponent from '../../interfaces/pageComponent';
 
 import './NavigationBar.css'
 
 type NavigatorProperties={
-    pages: Array<PageConponent>,
+    pages: Array<PageComponent>,
 }
 
 
@@ -23,7 +23,7 @@ class NavigationBar extends React.Component<NavigatorProperties> {
         return (
             <article>
                 <ul id="elements-holder">
-                    {/* {this.props.pages.map((pageData: PageConponent) => {<li><Link to={pageData.path}>{pageData.label_element}</Link></li>})} */}
+                    {this.props.pages.map((pageData: PageComponent) => <li><Link to={pageData.path}>{pageData.label_element}</Link></li>)}
                 </ul>
             </article>);
         
