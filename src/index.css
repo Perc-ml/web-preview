@@ -1,0 +1,21 @@
+:root {
+  --background-primary: #02121C;
+  --background-sideline: #000A11;
+
+  --chosen-element-color: #8198A8;
+  --common-element-color: #333F47;
+  --foreshadowed-element-color: #13171a;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-primary);
+}
+

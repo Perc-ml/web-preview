@@ -1,0 +1,36 @@
+article{
+    position: relative;
+    background-color: var(--background-sideline);
+    color: var(--common-element-color);
+}
+
+#elements-holder{
+    display: inline-block;
+}   
+
+
+#elements-holder li > *{
+    color: var(--common-element-color);
+    transition: all 0.15s ease-out;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -ms-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+}
+
+#elements-holder:has(li:hover) li:not(:hover) > *{
+    color: var(--foreshadowed-element-color);
+}
+
+#elements-holder li:hover{
+    color: var(--chosen-element-color);
+}
+
+
+#elements-holder:has(li:hover) li:not(:hover) > img{
+    background-color: var(--foreshadowed-element-color);
+}
+
+#elements-holder li:hover{
+    color: var(--chosen-element-color);
+}
